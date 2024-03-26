@@ -139,4 +139,72 @@ square = lambda x: x ** 2
 # Virtual Environments
 # Create: python -m venv myenv
 # Activate: source myenv/bin/activate (Linux/Mac), .\myenv\Scripts\activate (Windows)
-# Deactivate: deactivate
+# Deactivate: 
+
+Tuples,Lists,Strings
+
+Tuple (tuple):
+
+Tuples are immutable sequences, meaning once they are created, their contents cannot be changed (you can't add, remove, or modify elements).
+They are defined using parentheses ().
+Tuples are typically used to store collections of heterogeneous data (different types of data) that should not be changed, such as coordinates, database records, or pairs of values.
+Example: (1, 2, 'a', 'b')
+List (list):
+
+Lists are mutable sequences, meaning you can change their contents after they are created (you can add, remove, or modify elements).
+Lists are defined using square brackets [].
+Lists are commonly used for storing collections of homogeneous data (same type of data) that may need to be modified, such as a list of numbers, strings, or objects.
+Example: [1, 2, 3, 4]
+String (str):
+
+Strings are immutable sequences of characters.
+They are defined using either single quotes '' or double quotes "".
+Strings are used to represent text data and are commonly used for manipulating textual information.
+Example: 'hello'
+Here's a summary of their main characteristics:
+
+Mutability:
+
+Tuples: Immutable
+Lists: Mutable
+Strings: Immutable
+Definition Syntax:
+
+Tuples: Parentheses ()
+Lists: Square brackets []
+Strings: Single or double quotes '' or ""
+Typical Use Cases:
+
+Tuples: Storing fixed collections of items that should not change.
+Lists: Storing collections of items that may need to be modified.
+Strings: Storing and manipulating textual data.
+It's important to choose the appropriate data structure based on the requirements of your program, considering factors such as mutability, performance, and intended use.
+
+Built in functions 
+# Examples of built-in functions in Python
+
+# Finding the minimum and maximum values in a sequence
+numbers = [3, 7, 1, 9, 4]
+minimum = min(numbers)
+maximum = max(numbers)
+print("Minimum:", minimum)
+print("Maximum:", maximum)
+
+# Getting the number of items in a sequence
+length = len(numbers)
+print("Length:", length)
+
+# Checking if any or all elements in a sequence evaluate to True
+bool_list = [True, False, True, True]
+any_result = any(bool_list)
+all_result = all(bool_list)
+print("Any True:", any_result)
+print("All True:", all_result)
+
+# Calculating the sum of elements in a sequence
+total = sum(numbers)
+print("Sum:", total)
+
+# Sorting elements of any iterable
+sorted_numbers = sorted(numbers)
+print("Sorted numbers:", sorted_numbers)
