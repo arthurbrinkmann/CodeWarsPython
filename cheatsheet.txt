@@ -208,3 +208,30 @@ print("Sum:", total)
 # Sorting elements of any iterable
 sorted_numbers = sorted(numbers)
 print("Sorted numbers:", sorted_numbers)
+
+# Lists
+my_list = [1, 2, 3, 4, 5]
+
+# Tuples
+my_tuple = (6, 7, 8, 9, 10)
+
+# Sets
+my_set = {1, 2, 3, 4, 5}
+
+# Strings
+my_string = "Hello, World!"
+
+# Dictionaries
+my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+
+# Sets (Again)
+my_list_with_duplicates = [1, 2, 2, 3, 3, 4, 5, 5]
+unique_items = set(my_list_with_duplicates)
+
+# Printing the values
+print("List:", my_list)
+print("Tuple:", my_tuple)
+print("Set:", my_set)
+print("String:", my_string)
+print("Dictionary:", my_dict)
+print("Unique items from the list:", unique_items)
