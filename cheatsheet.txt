@@ -235,3 +235,65 @@ print("Set:", my_set)
 print("String:", my_string)
 print("Dictionary:", my_dict)
 print("Unique items from the list:", unique_items)
+
+BREAK example
+for i in range(5):
+    if i == 3:
+        break 
+    print(i)
+
+PASS example
+def check_number(number):
+    if number > 0:
+        print("The number is positive")
+    elif number < 0:
+        pass # We'll handle negatvie numebrs later
+    else:
+        pass # We'll handle zero later
+
+MATCH example
+def determine_shape(num_sides):
+    match num_sides:
+        case 3:
+            return "Triangle"
+        case 4: 
+            return "Square or Rectangle"
+        case 5:
+            return "Pentagon"
+        case _:
+            return "Unknown shape"
+
+FUNCTION DEFINTION WITH PARAMETERS AND ARGUMENTS
+# Function definition with parameters
+def add_numbers(x, y):
+    return x + y
+
+# Function call with arguments
+result = add_numbers(5, 3)
+print("The result is:", result)
+
+POSTITION VS KEYWORD ARGUMENTS 
+Posistion Arguments
+def greet(name, message):
+    print(f"Hello, {name}! {message}")
+
+# Passing positional arguments
+greet("Alice", "How are you?")
+
+KEYWORD ARGUMENTS
+def greet(name, message):
+    print(f"Hello, {name}! {message}")
+
+# Passing keyword arguments
+greet(message="How are you?", name="Bob")
+
+Nested List Comprehensions
+# List of lists representing boxes of toys
+boxes = [["car", "doll", "ball"],
+         ["red", "ball", "car"],
+         ["doll", "red", "ball"]]
+
+# Using nested list comprehensions to collect all the red toys
+red_toys = [toy for box in boxes for toy in box if toy == "red"]
+
+print(red_toys)  # Output: ['red', 'red']
