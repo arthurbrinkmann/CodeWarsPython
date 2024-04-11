@@ -297,3 +297,7 @@ boxes = [["car", "doll", "ball"],
 red_toys = [toy for box in boxes for toy in box if toy == "red"]
 
 print(red_toys)  # Output: ['red', 'red']
+
+"Step Over" moves to the next line of code.
+"Step Into" enters the code of a function if there's a function call.
+"Step Out" returns to the caller function if you're currently inside a function.
